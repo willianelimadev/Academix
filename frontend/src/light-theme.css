@@ -1,0 +1,52 @@
+:root {
+  --ink: #142831;
+  --muted: #5d7179;
+  --dim: #87999e;
+  --bg: #f1f6f5;
+  --panel: #ffffff;
+  --panel-2: #f8fbfa;
+  --line: rgba(20, 40, 49, .11);
+  --line-strong: rgba(20, 40, 49, .2);
+  --cyan: #168f91;
+  --cyan-soft: rgba(22, 143, 145, .1);
+  --green: #208a59;
+  --coral: #c75d4d;
+  --yellow: #a87312;
+}
+
+html, body { background: var(--bg); }
+body { color: var(--ink); }
+.app-shell { background: radial-gradient(circle at 71% 9%, rgba(117, 199, 190, .16), transparent 30rem), var(--bg); }
+.topbar { background: rgba(255, 255, 255, .88); }
+.brand-mark { background: rgba(22, 143, 145, .04); }
+.topbar-meta { color: var(--dim); }
+.sidebar, .main-panel { background: rgba(255, 255, 255, .28); }
+.assistant-panel { background: rgba(248, 251, 250, .7); }
+.search-box { background: rgba(255, 255, 255, .72); }
+.student-row:hover { background: rgba(22, 143, 145, .045); }
+.student-row.selected { background: linear-gradient(90deg, rgba(22, 143, 145, .11), rgba(22, 143, 145, .025)); border-color: rgba(22, 143, 145, .22); }
+.student-row-copy strong { color: #1d3540; }
+.student-row-copy small { color: #71868d; }
+.avatar { color: #176f72; border-color: rgba(22, 143, 145, .25); background: rgba(22, 143, 145, .1); }
+.tone-1 { color: #7350a7; border-color: rgba(115, 80, 167, .25); background: rgba(115, 80, 167, .09); }
+.tone-2 { color: #976c16; border-color: rgba(151, 108, 22, .25); background: rgba(151, 108, 22, .09); }
+.tone-3 { color: #ad5043; border-color: rgba(173, 80, 67, .25); background: rgba(173, 80, 67, .09); }
+.avatar-large { color: #176f72; border-color: rgba(22, 143, 145, .38); background: linear-gradient(135deg, rgba(22, 143, 145, .16), rgba(171, 224, 216, .3)); }
+.stat-card, .content-card { background: rgba(255, 255, 255, .82); box-shadow: 0 8px 28px rgba(41, 77, 80, .045); }
+.stat-card.accent { background: linear-gradient(145deg, rgba(227, 247, 244, .9), rgba(255, 255, 255, .86)); }
+.stat-card > strong { color: #18313b; }
+.finance-overview { background: rgba(22, 143, 145, .045); }
+.identity p, .detail-meta, .finance-copy p, .message p { color: var(--muted); }
+.finance-numbers strong, .amount-cell { color: #18313b; }
+.ring::after { background: #fff; }
+.ring strong { color: #168f91; }
+.installment-table { border-top-color: var(--line); }
+.table-row { color: #687e85; border-bottom-color: rgba(20, 40, 49, .075); }
+.reference-cell { color: #1c343d; }
+.assistant-orb { background: radial-gradient(circle, rgba(22, 143, 145, .16), transparent 70%); }
+.suggestions button { background: rgba(255, 255, 255, .62); }
+.suggestions button:hover { background: rgba(22, 143, 145, .08); }
+.message.user p { color: #18313b; }
+.assistant-composer { background: rgba(255, 255, 255, .75); }
+.loading-lines span { background: linear-gradient(90deg, rgba(20, 40, 49, .06), rgba(20, 40, 49, .13), rgba(20, 40, 49, .06)); background-size: 200% 100%; }
+.empty-icon { color: var(--dim); }
